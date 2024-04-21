@@ -1,0 +1,12 @@
+.e-container{
+    justify-content: space-around;
+    gap:1rem;
+}
+.e-container>img{
+    width: 9rem;
+}
+.image-style {
+    width: 100px;
+    height: 100px;
+  }
+  
