@@ -8,11 +8,13 @@ const Hero = () => {
             <div className="paddings innerWidth flexCenter hero-container">
                 <div className=" flexColStart hero-left">
                     <div className="hero-title">
+                    
                         <h1>
 
                             MAKING <br />
                             AN <br /> IMPACT
                         </h1>
+                       
                     </div>
 
 

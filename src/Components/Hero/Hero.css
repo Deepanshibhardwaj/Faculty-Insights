@@ -17,13 +17,20 @@
   .hero-title{
     position: relative;
     z-index: 1;
-
+   
   }
   .hero-title>h1{
     font-weight: 600;
     font-size: 3.8rem;
     line-height: 4rem;
     color: #00008B;
+    overflow: hidden;
+    animation: reveal 2s linear forwards;
+   
+  }
+  .box h1{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-transform: uppercase;
   }
   .secondaryText{
     color: #00008B;
@@ -31,20 +38,6 @@
   }
 
   
-  
-  .location{
-    display: flex;
-    align-items: center;
-  }
-  .location-text{
-    color: #00008B;
-    font-size: large;
-    font-weight: bold;
-    margin-left: 5px;
-  }
-
-
-
   
   .image-container {
     width: 100%;
@@ -55,7 +48,21 @@
     margin-right: 70px;
   
   }
+  @keyframes reaveal{
+   0% { 
+    width: 0px;
+    height: 0px;
 
+
+
+    }
+  }
+
+
+
+
+  
+  
 
 
 

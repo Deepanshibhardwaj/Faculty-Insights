@@ -1,38 +1,38 @@
 [
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "name": "Undergraduate B.Tech",
+    "n": "Bachelor of Technology Programs",
+    "detail": "The Programs of study emphasize strong conceptual understanding and practical skills in their respective areas of specialization. ",
+    "image": "./student2.jpg"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "name": "BBA",
+    "n": "JBS BBA Program",
+    "detail": "The 4 years full time BBA curriculum is imaginative and is comprised of creative combinations of disciplines of study.",
+    "image": "./jbs.jpg"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "name": "INTEGRATED B.TECH-M.TECH",
+    "n": "BT, CSE, ECE",
+    "detail": "The integrated B. Tech + M. Tech course offers a higher level of specialization, advanced courses, and research opportunities to students.",
+    "image": "./faculty.jpg"
   },
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "name": "DIPLOMA COURSE",
+    "n": "CS & IT , Microelectronic ",
+    "detail": "short-term courses focusing on vocational training and skill development.",
+    "image": "./campus2.jpg"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "name": "MBA",
+    "n": "Master of business administration",
+    "detail": "A graduate degree that provides theoretical and practical training for business or investment management.",
+    "image": "./audi.webp"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "name": "POST GRADUATE PROGRAM",
+    "n": "Mtech,MBA,MCA",
+    "detail": "The objective of the M. Tech Programs is to prepare professionals with advanced knowledge of the respective field who can serve industry,",
+    "image": "./student2.jpg"
   }
 ]
