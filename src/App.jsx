@@ -5,6 +5,8 @@ import Education from './Components/Education/Education';
 import  Courses from './Components/Courses/courses';
 import Footer from './Components/Footer/footer';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +14,9 @@ function App() {
       <Hero />
       <Education/>
       <Courses/>
-      <Footer/>
+      <Footer/> 
+      
+      
    
     </div>
   );
