@@ -1,25 +1,21 @@
 import React from 'react';
-import Header from './Components/Header/Header';
-import Hero from './Components/Hero/Hero';
-import Education from './Components/Education/Education';
-import  Courses from './Components/Courses/courses';
-import Footer from './Components/Footer/footer';
+import {Routes, Route } from 'react-router-dom';
+
+import Login from './Components/Pages/login';
+import Home from './Components/Pages/Home';
+
 
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Education/>
-      <Courses/>
-      <Footer/> 
-      
-      
-   
+    <div >
+      <Routes>
+        <Route path='/' element={<Home/>}/> 
+        <Route path='/login' element={<Login/>}/> 
+      </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
