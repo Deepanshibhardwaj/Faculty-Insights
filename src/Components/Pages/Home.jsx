@@ -5,6 +5,7 @@ import Education from '../../Components/Education/Education';
 import Courses from '../../Components/Courses/courses';
 import Footer from '../../Components/Footer/footer';
 
+
 const Home = () => {
   return (
     <div>

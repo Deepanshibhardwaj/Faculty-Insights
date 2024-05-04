@@ -13,7 +13,7 @@ const Search = () => {
     <section className="s-wrapper">
       <div className="s-container">
         <img src="./logo3.png" alt="logo" width={500} />
-        <div className="input-box">
+        <div className=" input-box">
           <input
             type="search"
             name="search-form"
@@ -26,6 +26,8 @@ const Search = () => {
 
         </div>
       </div>
+      
+      
     </section>
   );
 };
