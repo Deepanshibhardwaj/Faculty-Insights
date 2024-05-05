@@ -1,6 +1,7 @@
 import React from 'react';
 import './banner.css';
 
+
 const banner = () => {
   return (
     <section className="b-wrapper">

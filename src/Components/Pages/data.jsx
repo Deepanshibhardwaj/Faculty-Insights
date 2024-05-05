@@ -1,4 +1,4 @@
-const Fdata = [
+const Fdata=[
 
     {
         fname: "Dr. Vikas Saxena ",
@@ -10,7 +10,7 @@ const Fdata = [
     {
         fname: "Dr. Parmeet Kaur Sodhi",
         position: "Associate Professor",
-        image: "./parmeetkaur.jpg",
+        image: "./ParmeetKaur.jpg",
         Cabinno: "244",
         email: "parmeetkaur.sodhi@mail.jiit.ac.in"
     },
@@ -35,6 +35,8 @@ const Fdata = [
         Cabinno: "204",
         email: "k.rajalakshmi@mail.jiit.ac.in"
     },
+];
+export default Fdata;
 
 
 
@@ -73,8 +75,3 @@ const Fdata = [
 
 
 
-
-
-
-
-]
