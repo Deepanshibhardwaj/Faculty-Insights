@@ -2,6 +2,13 @@ const jwt = require('jsonwebtoken');
 const Student = require('../models/Student');
 const Teacher = require('../models/Teacher');
 const bcrypt = require('bcrypt');
+const cloudinary = require('cloudinary').v2;
+
+cloudinary.config({
+  cloud_name: 'dtpuvzwyu',
+  api_key: 443257453111698,
+  api_secret: 'G_tLJ1hpiFytfIIhQY9Su9ZnQZw',
+});
 
 const StudentLogin = async (req, res) => {
   const { email, password } = req.body;
@@ -13,16 +20,10 @@ const StudentLogin = async (req, res) => {
       return res.status(404).json({ message: 'Invalid email or password' });
     }
 
-    if (typeof student.password !== 'string' || typeof password !== 'string') {
-      return res.status(500).json({ message: 'Invalid password data type' });
-    }
-
-    const isPasswordValid = await bcrypt.compare(password, student.password);
+    const isPasswordValid =  bcrypt.compare(password, student.password);
     if (!isPasswordValid) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
-
-    
 
     const token = jwt.sign({ id: student._id }, 'Diya', { expiresIn: '1h' });
 
@@ -43,7 +44,7 @@ const TeacherLogin = async (req, res) => {
       return res.status(404).json({ message: 'Invalid email or password' });
     }
 
-    const isPasswordValid = await bcrypt.compare(password, teacher.password);
+    const isPasswordValid =  bcrypt.compare(password, teacher.password);
     if (!isPasswordValid) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
@@ -57,4 +58,33 @@ const TeacherLogin = async (req, res) => {
   }
 };
 
-module.exports = { StudentLogin, TeacherLogin }
+const createTeacher = async (req, res) => {
+  try {
+    const { name, position, cabinNumber, email, password } = req.body;
+    
+
+    if (!req.file || !req.file.path) {
+      return res.status(400).json({ message: 'Photo upload failed' });
+    }
+
+    const uploadedPhoto = await cloudinary.uploader.upload(req.file.path);
+
+    const teacher = await Teacher.create({
+      name,
+      position,
+      photo: uploadedPhoto.secure_url, 
+      cabinNumber,
+      email,
+      password
+    });
+
+    res.status(201).json({ message: 'Teacher created successfully', teacher });
+  } catch (error) {
+    console.error('Error creating teacher:', error.message);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+};
+
+
+
+module.exports = { StudentLogin, TeacherLogin, createTeacher }

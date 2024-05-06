@@ -3,6 +3,7 @@ const app = express();
 const connectToDB  = require('./connection/ConnectingDB');
 const cors = require("cors");
 const authRouter = require('./Routes/AuthRoute');
+const InformationRouter = require('./Routes/InformationRoute');
 
 
 // Some MiddleWare
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 app.use('/auth',authRouter);
+app.use('/information',InformationRouter);
 
 const port = 8081;
 app.get("/",(req,res) => {
