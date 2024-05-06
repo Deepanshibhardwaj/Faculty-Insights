@@ -1,5 +1,25 @@
 const Student = require('../models/Student');
 const Teacher = require('../models/Teacher');
+const scheduleData = require('../DataEntry/scheduleData.json');
+
+
+function findSlotForTeacherInDay(day, teacherCode, schedule) {
+  if (schedule.Column1 !== day) {
+      return null; 
+  }
+
+  for (const [timeSlot, slotInfo] of Object.entries(schedule)) {
+      if (timeSlot !== "Column1") {
+          if (typeof slotInfo === 'string' && slotInfo.includes(teacherCode)) {
+              const [groupRoom] = slotInfo.split('-').slice(-1);
+              const [group, room] = groupRoom.split('/');
+              return { timeSlot, group, room };
+          }
+      }
+  }
+
+  return null; // Teacher not found in any time slot
+}
 
 // Controller to fetch all students
 const getAllStudents = async (req, res) => {
@@ -52,9 +72,26 @@ const getAllTeachers = async (req, res) => {
     }
   };
 
+  const scheduling = async(req, res) => {
+    try {
+      const { day, teacherCode } = req.params;
+      const slotInfo = findSlotForTeacherInDay(day, teacherCode, scheduleData);
+      if (slotInfo) {
+        res.json(slotInfo);
+      } else {
+        res.status(404).json({ error: "Teacher not found in the schedule for the given day." });
+      }
+    } catch (error) {
+        console.error('Error in scheduling:', error.message);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
+
+
 module.exports = {
   getAllStudents,
   getStudentById,
   getTeacherById,
-  getAllTeachers
+  getAllTeachers,
+  scheduling
 };
