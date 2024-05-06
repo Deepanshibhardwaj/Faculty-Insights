@@ -8,7 +8,7 @@ const login = () => {
 
     const handleContinue= () =>{
 
-        navigate('/Search');
+      navigate('/Search');
     };
   return (
     <div className='loginsignup'>
@@ -22,9 +22,6 @@ const login = () => {
     </div>
     <button onClick={handleContinue}>Continue</button>
     <p className="loginsignup-login"> Login by your enrollement no.</p>
-
-    
-    
     
     </div>
   )

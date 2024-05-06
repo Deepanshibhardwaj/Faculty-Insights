@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './search.css';
-import {IoSearchOutline} from 'react-icons/io5';
+import Banner from '../../Components/Pages/banner';
+
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -22,12 +23,10 @@ const Search = () => {
             onChange={handleSearch}
             placeholder="Search Faculty"
           />
-           
-
+          
         </div>
       </div>
-      
-      
+      <Banner/>      
     </section>
   );
 };

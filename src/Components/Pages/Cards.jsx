@@ -26,9 +26,6 @@ function Faculty(props) {
                 </div>
 
             </div>
-
-        
-
     )
 
 }

@@ -6,7 +6,6 @@ const authRouter = require('./Routes/AuthRoute');
 const InformationRouter = require('./Routes/InformationRoute');
 
 
-
 // Some MiddleWare
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
