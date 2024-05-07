@@ -5,9 +5,9 @@ const bcrypt = require('bcrypt');
 const cloudinary = require('cloudinary').v2;
 
 cloudinary.config({
-  cloud_name: 'dtpuvzwyu',
-  api_key: 443257453111698,
-  api_secret: 'G_tLJ1hpiFytfIIhQY9Su9ZnQZw',
+  cloud_name: 'di2jwnbwk',
+  api_key: 619198869444886,
+  api_secret: 'jOxe7yAUGwQeAEgrHCtoa4EPKqQ',
 });
 
 const StudentLogin = async (req, res) => {

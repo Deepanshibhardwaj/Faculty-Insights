@@ -35,6 +35,14 @@ const Fdata=[
         Cabinno: "204",
         email: "k.rajalakshmi@mail.jiit.ac.in"
     },
+    {
+        fname: "Dr.Prakash Kumar",
+        position: "Associate Professor",
+        image: "./PrakashKumar.jpg",
+        Cabinno: "229",
+        email: "prakash.kumar@mail.jiit.ac.in"
+    },
+
 ];
 export default Fdata;
 
