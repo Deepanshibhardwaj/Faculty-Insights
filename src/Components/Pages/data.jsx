@@ -42,6 +42,21 @@ const Fdata=[
         Cabinno: "229",
         email: "prakash.kumar@mail.jiit.ac.in"
     },
+    {
+        fname: "Dr. Dharmveer Singh Rajpoot",
+        position: "Associate Professor",
+        image: "./Dharmveer.jpg",
+        Cabinno: "238",
+        email: "dharmveer.rajpoot@mail.jiit.ac.in"
+    },
+    {
+        fname: "Dr. Shikha Jain",
+        position: "Assistant Professor",
+        image: "./shikhajain.jpg",
+        Cabinno: "241",
+        email: "shikha.jain@mail.jiit.ac.in"
+    },
+
 
 ];
 export default Fdata;

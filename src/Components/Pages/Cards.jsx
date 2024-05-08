@@ -9,9 +9,13 @@ function Faculty({ photo, name, cabinNumber, position, email }) {
         setShowDetails(!showDetails);
     };
 
+    const handleClose = () => {
+        setShowDetails(false); // Close the detailed view page
+    };
+
     return (
         <div className="facultys">
-            <div className="faculty">
+             <div className={`faculty ${showDetails ? 'blur' : ''}`}>
                 <img
                     src={photo}
                     alt="myPic"
@@ -32,6 +36,8 @@ function Faculty({ photo, name, cabinNumber, position, email }) {
                     cabinNumber={cabinNumber}
                     position={position}
                     email={email}
+                    onClose={handleClose} 
+                 
                 />
             )}
         </div>
