@@ -1,6 +1,6 @@
 const Student = require('../models/Student');
 const Teacher = require('../models/Teacher');
-const scheduleData = require('../DataEntry/scheduleData.json');
+const scheduleData = require('./scheduleData.json');
 
 
 function findSlotForTeacherInDay(day, teacherCode, schedule) {
