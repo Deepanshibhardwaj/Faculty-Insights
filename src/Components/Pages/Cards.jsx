@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './faculty.css';
 import View from './view'; 
+import axios from 'axios';
 
-function Faculty({ photo, name, cabinNumber, position, email }) {
+function Faculty({ photo, name, cabinNumber, position, email, teacherCode }) {
     const [showDetails, setShowDetails] = useState(false);
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
 
     const handleClick = () => {
         setShowDetails(!showDetails);
     };
 
     const handleClose = () => {
-        setShowDetails(false); // Close the detailed view page
+        setShowDetails(false);
     };
+
 
     return (
         <div className="facultys">
-             <div className={`faculty ${showDetails ? 'blur' : ''}`}>
+            <div className={`faculty ${showDetails ? 'blur' : ''}`}>
                 <img
                     src={photo}
                     alt="myPic"
@@ -36,10 +41,13 @@ function Faculty({ photo, name, cabinNumber, position, email }) {
                     cabinNumber={cabinNumber}
                     position={position}
                     email={email}
+                    teacherCode = {teacherCode}
                     onClose={handleClose} 
-                 
                 />
             )}
+
+            {/* Display schedule details */}
+    
         </div>
     );
 }

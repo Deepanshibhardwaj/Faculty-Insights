@@ -62,14 +62,15 @@ const Search = () => {
       </div>
       <Banner />
       <div className="faculty-container">
-        {filteredData.map((faculty) => (
-          <div key={faculty.id} className="faculty-item">
+        {filteredData.map((faculty,index) => (
+          <div key={index} className="faculty-item">
             <Faculty
               photo={faculty.photo}
               position={faculty.position}
               name={faculty.name}
               email={faculty.email}
               cabinNumber={faculty.cabinNumber}
+              teacherCode={faculty.teacherCode}
             />
           </div>
         ))}

@@ -23,6 +23,7 @@ const FacultyInformation = () => {
 
         fetchData();
     }, []);
+    console.log(facultyData);
 
     if (loading) {
         return <div>Loading...</div>;
@@ -36,7 +37,7 @@ const FacultyInformation = () => {
         <div className="faculty-container">
             {facultyData.map((faculty) => (
                 <div key={faculty.id} className="faculty-item">
-                    <Faculty photo={faculty.photo} position={faculty.position} name={faculty.name} email={faculty.email} cabinNumber={faculty.cabinNumber}/>
+                    <Faculty photo={faculty.photo} position={faculty.position} name={faculty.name} email={faculty.email} cabinNumber={faculty.cabinNumber} teacherCode={faculty.teacherCode}/>
                 </div>
             ))}
         </div>

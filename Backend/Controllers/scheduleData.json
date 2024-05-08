@@ -90,7 +90,7 @@
      "Column1": "Monday",
      "9-9.50 AM": "LB(CS334)-GF7\/FF7",
      "10-10.50 AM": "LA,B(PH531)-G7\/SND",
-     "11-11.50 AM": "TB14(CI412)-TS16\/PAR",
+     "11-11.50 AM": "TB14(CI412)-FF3\/PAR",
      "2-2.50 PM": "TB5(CI412)-TS16\/KRL",
      "3-3.50 PM": "PB2CI575)-CL20\/VIK",
      "4-4.50 PM": "PB2CI575)-CL20\/VIK"
@@ -129,7 +129,7 @@
      "9-9.50 AM": "LA,B,C(HS432)-G9\/BB",
      "1-1.50 PM": "DE-1",
      "2-2.50 PM": "LB14,B15(CS212)-FF6\/JN",
-     "3-3.50 PM": "TB9(CI412)-TS7\/PAR",
+ 
      "4-4.50 PM": "TB12(CI412)-TS16\/VIK"
     },
     {
@@ -191,7 +191,7 @@
     },
     {
      "Column1": "Tuesday",
-     "10-10.50 AM": "TB4(CI412)-TS12\/PAR",
+   
      "1-1.50 PM": "LA(EC313)-FF1\/SHS",
      "2-2.50 PM": "TC1,C3(BT511)-F7\/RAC, PC",
      "3-3.50 PM": "PC2 (BT571)-BIOINFO\/CKJ, NF1, NF3",
@@ -291,7 +291,7 @@
     },
     {
      "Column1": "Wednesday",
-     "9-9.50 AM": "LB7,B8(CI412)-G5\/TAJ",
+     "9-9.50 AM": "LB7,B8(CI412)-FF3\/PAR",
      "10-10.50 AM": "TB6(CI412)-TS12\/PKU",
      "11-11.50 AM": "TB12(CI313)-TS12\/VRN",
      "1-1.50 PM": "LAB(PH531)-G7\/SND",
@@ -465,12 +465,12 @@
     },
     {
      "Column1": "Thursday",
-     "3-3.50 PM": "PB4(CI472)-CL13\/PAR",
-     "4-4.50 PM": "PB4(CI472)-CL13\/PAR"
+     "9-10.50 PM": "PB4(CI472)-G1\/PAR"
+    
     },
     {
      "Column1": "Thursday",
-     "3-3.50 PM": "PB3(CI472)-CL22\/PKU",
+   
      "4-4.50 PM": "PB3(CI472)-CL22\/PKU"
     },
     {
@@ -533,7 +533,7 @@
     },
     {
      "Column1": "Friday",
-     "9-9.50 AM": "PB5(CI472)-CL17\/PAR",
+     "3-4.50 AM": "PB5(CI472)-CL02\/PAR",
      "11-11.50 AM": "LC1-C3(BT413)-ASM,SS\/G2",
      "2-2.50 PM": "LB14,B15(CS212)-CS3\/JN",
      "3-3.50 PM": "PB10(CI472)-CL19\/ASP",
