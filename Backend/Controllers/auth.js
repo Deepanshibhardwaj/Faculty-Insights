@@ -60,7 +60,7 @@ const TeacherLogin = async (req, res) => {
 
 const createTeacher = async (req, res) => {
   try {
-    const { name, position, cabinNumber, email, password } = req.body;
+    const { name, position, cabinNumber, email, password, teacherCode } = req.body;
     
 
     if (!req.file || !req.file.path) {
@@ -77,6 +77,7 @@ const createTeacher = async (req, res) => {
       cabinNumber,
       email,
       password: hashedPassword,
+      teacherCode
     });
 
     res.status(201).json({ message: 'Teacher created successfully', teacher });
