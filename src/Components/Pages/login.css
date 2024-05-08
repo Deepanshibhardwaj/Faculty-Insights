@@ -1,5 +1,11 @@
 /* login.css */
 
+.radiocss{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 .loginsignup {
     display: flex;
     flex-direction: column;

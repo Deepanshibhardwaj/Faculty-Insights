@@ -8,26 +8,43 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [role, setRole] = useState('student'); // Default role is student
     const [error, setError] = useState('');
 
     const handleContinue = async () => {
         try {
-            // Make a POST request to your login API endpoint
-            const response = await axios.post('http://localhost:8081/auth/student-login', {
-                email,
-                password
-            });
-            if (response.data.token) {
-              localStorage.setItem('token', JSON.stringify(response.data.token));
-              localStorage.setItem('user', JSON.stringify(response.data.student));
-              navigate('/Search');
-            } else {
-              setError('Invalid email or password');
+            // Make a POST request to your login API endpoint with role included
+            if(role == 'student'){
+                const response = await axios.post('http://localhost:8081/auth/student-login', {
+                    email,
+                    password,
+                });
+                if (response.data.token) {
+                  localStorage.setItem('token', JSON.stringify(response.data.token));
+                  localStorage.setItem('user', JSON.stringify(response.data.user));
+                  navigate('/Search');
+                } else {
+                  setError('Invalid email or password');
+                }
+            } else{
+                const response = await axios.post('http://localhost:8081/auth/teacher-login', {
+                    email,
+                    password,
+                });
+                if (response.data.token) {
+                  localStorage.setItem('token', JSON.stringify(response.data.token));
+                  localStorage.setItem('user', JSON.stringify(response.data.user));
+                  navigate('/Search');
+                } else {
+                  setError('Invalid email or password');
+                }
             }
         } catch (error) {
             setError('Invalid email or password');
         }
     };
+
+
 
     return (
         <div className='loginsignup'>
@@ -47,6 +64,26 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+                <div className='radiocss'>
+                    <label>
+                        <input
+                            type="radio"
+                            value="student"
+                            checked={role === 'student'}
+                            onChange={() => setRole('student')}
+                        />
+                        Student
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            value="teacher"
+                            checked={role === 'teacher'}
+                            onChange={() => setRole('teacher')}
+                        />
+                        Teacher
+                    </label>
+                </div>
             </div>
             <button onClick={handleContinue}>Continue</button>
             {error && <p className="error-message">{error}</p>}

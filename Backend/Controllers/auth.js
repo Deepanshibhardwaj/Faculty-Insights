@@ -66,6 +66,7 @@ const createTeacher = async (req, res) => {
     if (!req.file || !req.file.path) {
       return res.status(400).json({ message: 'Photo upload failed' });
     }
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const uploadedPhoto = await cloudinary.uploader.upload(req.file.path);
 
@@ -75,7 +76,7 @@ const createTeacher = async (req, res) => {
       photo: uploadedPhoto.secure_url, 
       cabinNumber,
       email,
-      password
+      password: hashedPassword,
     });
 
     res.status(201).json({ message: 'Teacher created successfully', teacher });

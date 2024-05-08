@@ -6,7 +6,7 @@
      "11-11.50 AM": "LB3,B4(CI412)-G2\/PK",
      "12-12.50 PM": "LA,C(CS322)-FF6\/APJ",
      "1-1.50 PM": "LA,B,C(HS432)-G9\/BB",
-     "2-2.50 PM": "LA3,A4(CI518)-FF6\/SHG",
+     "2-2.50 PM": "LA3,A4(CI518)-FF6\/SHV",
      "3-3.50 PM": "LB14,B15(CS212)-FF6\/JN",
      "4-4.50 PM": "LB9,B10(HS311)-FF6\/NAM"
     },
@@ -27,7 +27,7 @@
      "11-11.50 AM": "LB11,B12(CI412)-G7\/VIK",
      "1-1.50 PM": "LA,B,C(HS435)-FF2\/SKU",
      "3-3.50 PM": "TA6,10(EC312)-TS16\/NSH",
-     "4-4.50 PM": "LA1,A2(CI518)-G3\/SHG"
+     "4-4.50 PM": "LA1,A2(CI518)-G3\/SHV"
     },
     {
      "Column1": "Monday",
@@ -43,7 +43,7 @@
      "9-9.50 AM": "LA(NEC735)-FF2\/RIG",
      "10-10.50 AM": "LA,B,C(MA533)-FF3\/NS",
      "11-11.50 AM": "LB5,B6(HS311)-FF7\/IJ",
-     "1-1.50 PM": "LA,B,C(23HS312)-G7\/VSE",
+     "1-1.50 PM": "LA,B,C(23HS312)-G7\/VS",
      "2-2.50 PM": "LB11,B12(HS311)-CS3\/AVM",
      "3-3.50 PM": "PA3(EC312)-ACL,JBSPL\/RB,MO",
      "4-4.50 PM": "PA3(EC312)-ACL,JBSPL\/RB,MO"
@@ -91,7 +91,7 @@
      "9-9.50 AM": "LB(CS334)-GF7\/FF7",
      "10-10.50 AM": "LA,B(PH531)-G7\/SND",
      "11-11.50 AM": "TB14(CI412)-TS16\/PAR",
-     "2-2.50 PM": "TB5(CI412)-TS16\/KSA",
+     "2-2.50 PM": "TB5(CI412)-TS16\/KRL",
      "3-3.50 PM": "PB2CI575)-CL20\/VIK",
      "4-4.50 PM": "PB2CI575)-CL20\/VIK"
     },
@@ -162,7 +162,7 @@
     },
     {
      "Column1": "Tuesday",
-     "9-9.50 AM": "LA,B,C(23HS312)-G7\/VSE",
+     "9-9.50 AM": "LA,B,C(23HS312)-G7\/VS",
      "10-10.50 AM": "LA1,A2(HS311)-G3\/IJ",
      "11-11.50 AM": "LC1,C2,C3(BT412)-G3\/VBR,VGU",
      "1-1.50 PM": "LB(CS333)-FF6\/PU",
@@ -255,7 +255,7 @@
     {
      "Column1": "Wednesday",
      "9-9.50 AM": "TA4(EC312)-TS16\/RB",
-     "10-10.50 AM": "LA1,A2(CI518)-FF6\/SHG",
+     "10-10.50 AM": "LA1,A2(CI518)-FF6\/SHV",
      "11-11.50 AM": "LB9,B10(CI412)-FF7\/AJS",
      "1-1.50 PM": "LA,B,C(MA533)-FF2\/PAT",
      "2-2.50 PM": "LB14,B15(CI412)-G3\/PKU",
@@ -278,7 +278,7 @@
      "11-11.50 AM": "LA5,A6,A10(HS311)-G3\/SKU",
      "1-1.50 PM": "LA,B (MA731)-FF4\/HA",
      "2-2.50 PM": "TA2(EC312)-TS16\/VNS",
-     "3-3.50 PM": "LA3,A4(CI518)-FF7\/SHG"
+     "3-3.50 PM": "LA3,A4(CI518)-FF7\/SHV"
     },
     {
      "Column1": "Wednesday",
@@ -460,8 +460,8 @@
     },
     {
      "Column1": "Thursday",
-     "3-3.50 PM": "PB12(CI472)-CL24\/KSA",
-     "4-4.50 PM": "PB12(CI472)-CL24\/KSA"
+     "3-3.50 PM": "PB12(CI472)-CL24\/KRL",
+     "4-4.50 PM": "PB12(CI472)-CL24\/KRL"
     },
     {
      "Column1": "Thursday",
@@ -480,7 +480,7 @@
      "11-11.50 AM": "DE-1",
      "12-12.50 PM": "LA,C(CS322)-FF6\/APJ",
      "1-1.50 PM": "LABC(HS432)-G9\/BB",
-     "2-2.50 PM": "LB1,B2(CI412)-G2\/KSA",
+     "2-2.50 PM": "LB1,B2(CI412)-G2\/KRL",
      "3-3.50 PM": "LB3,B4(HS311)-G2\/NAM",
      "4-4.50 PM": "LB11,B12(CI313)-G4\/VRN"
     },
@@ -507,8 +507,8 @@
      "9-9.50 AM": "LA1,A2(HS311)-FF7\/IJ",
      "10-10.50 AM": "LB9,B10(CI313)-FF7\/VRN",
      "11-11.50 AM": "LB7,B8,B9,B11,B12,B14,B15(CS332)-ASY\/FF5",
-     "1-1.50 PM": "LABC(23HS312)-G7\/VSE",
-     "2-2.50 PM": "LA3,A4(CI518)-FF7\/SHG",
+     "1-1.50 PM": "LABC(23HS312)-G7\/VS",
+     "2-2.50 PM": "LA3,A4(CI518)-FF7\/SHV",
      "3-3.50 PM": "PA2(EC312)-ACL,JBSPL\/RB,MO",
      "4-4.50 PM": "PA2(EC312)-ACL,JBSPL\/RB,MO"
     },
@@ -548,7 +548,7 @@
     },
     {
      "Column1": "Friday",
-     "9-9.50 AM": "PB1(CI472)-CL19\/KSA",
+     "9-9.50 AM": "PB1(CI472)-CL19\/KRL",
      "11-11.50 AM": "LA(NEC735)-FF2\/RIG",
      "3-3.50 PM": "PB1(CI576)-CL21\/APR",
      "4-4.50 PM": "PB1(CI576)-CL21\/APR"
@@ -588,7 +588,7 @@
     },
     {
      "Column1": "Saturday",
-     "9-9.50 AM": "LB1,B2(CI412)-G7\/KSA",
+     "9-9.50 AM": "LB1,B2(CI412)-G7\/KRL",
      "11-11.50 AM": "LB1,B2(CI313)-G7\/AMK"
     },
     {

@@ -19,8 +19,7 @@ const Header = () => {
           {/* Wrap the entire motion.button with Link */}
           {
             token ? <button className="logout-button" onClick={handleLogout}>Logout</button> : <>
-              <motion.button className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><Link to={'/login'}>Login as Faculty</Link></motion.button>
-              <motion.button className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><Link to={'/login'}>Login as Student</Link></motion.button>
+              <motion.button className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><Link to={'/login'}>Login</Link></motion.button>
             </>
           }
         </motion.div>

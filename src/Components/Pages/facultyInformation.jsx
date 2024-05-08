@@ -33,9 +33,9 @@ const FacultyInformation = () => {
     }
 
     return (
-        <div>
+        <div className="faculty-container">
             {facultyData.map((faculty) => (
-                <div key={faculty.id}>
+                <div key={faculty.id} className="faculty-item">
                     <Faculty photo={faculty.photo} position={faculty.position} name={faculty.name} email={faculty.email} cabinNumber={faculty.cabinNumber}/>
                 </div>
             ))}

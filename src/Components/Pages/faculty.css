@@ -1,25 +1,32 @@
 .facultys {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping to the next line */
-  justify-content: space-between; /* Spread the blocks evenly */
-  flex-direction: row; /* Set the direction to row */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.faculty-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faculty-item {
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px);
 }
 
 .faculty {
-  position: relative; /* Add position relative for stacking context */
+  position: relative;
   width: 48%;
-  /* width: calc(33.33% - 20px); */
   margin-bottom: 20px;
-  /* margin-right: 20px; */
   box-shadow: 0px 1px 10px -7px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+  transition: transform 0.3s ease-in-out;
 }
 
-
-
 .faculty:hover {
-  transform: translateY(-5px); /* Move the box up slightly on hover */
+  transform: translateY(-5px);
 }
 
 .faculty_img {
@@ -28,7 +35,7 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   object-fit: cover;
-  display: flex;
+  display: block; /* Change display to block */
 }
 
 .faculty_info {
@@ -53,12 +60,38 @@
   color: #777777;
 }
 
+.view_more_button {
+  background-color: #00008b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view_more_button:hover {
+  background-color: #00008b;
+}
+
 @media (max-width: 768px) {
   .facultys {
-    flex-direction: column; /* Change to column layout on smaller screens */
+    flex-direction: column;
   }
 
   .faculty {
-    width: 100%; /* Set the width to 100% for each block on smaller screens */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faculty-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faculty-item {
+    width: calc(100% - 20px);
   }
 }
